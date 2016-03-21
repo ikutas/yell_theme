@@ -1,0 +1,31 @@
+/*ブログタイトル*/
+header {
+    .sitename {
+        font-size: 22px;
+        color: #fff;
+        line-height: 30px;
+        font-family: 'Oswald', sans-serif;
+        padding: 0;
+        margin-bottom: 10px;
+        a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            &:hover {
+                -moz-opacity: 0.8;
+                opacity: 0.8;
+            }
+        }
+    }
+    h1 {
+        font-size: 12px;
+        font-weight: normal;
+    }
+    .descr {
+        font-size: 12px;
+        font-weight: normal;
+        margin-bottom: 0;
+        line-height: 20px;
+        padding-bottom: 10px;
+    }
+}

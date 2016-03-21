@@ -1,0 +1,140 @@
+.postWrapper {
+    h2 {
+        position: relative;
+        margin: 0 12px 25px 0;
+        padding: 14px 15px 0 20px;
+        color: #333;
+        background: #ffc;
+        box-shadow: 12px 0 0 0 #ffc, 0 12px 0 0 #ffc, 1px 15px 4px -3px rgba(0, 0, 0, 0.2);
+        &:before {
+            display: none;
+        }
+        &:after {
+            content: " ";
+            position: absolute;
+            top: 100%;
+            left: 100%;
+            width: 0;
+            height: 0;
+            border-width: 12px 12px 0 0;
+            border-style: solid;
+            border-color: transparent;
+            border-top-color: #cc9;
+            border-radius: 0;
+        }
+    }
+    h4 {
+        position: relative;
+        padding-left: 30px;
+        border-bottom: 4px solid #ccc;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 38px;
+        margin: 0 0 10px;
+        &:before {
+            content: '';
+            border-radius: 30px;
+            -webkit-border-radius: 30px;
+            -moz-border-radius: 30px;
+            height: 12px;
+            width: 12px;
+            display: block;
+            position: absolute;
+            top: 14px;
+            left: 7px;
+            background-color: #FFADD6;
+            box-shadow: 0 0 2px 2px rgba(255, 255, 255, 0.2) inset;
+            filter:alpha(opacity=50);
+            -moz-opacity: 0.50;
+            -khtml-opacity: 0.50;
+            opacity: 0.50;
+            z-index: 1;
+        }
+        &:after {
+            content: '';
+            border-radius: 30px;
+            -webkit-border-radius: 30px;
+            -moz-border-radius: 30px;
+            height: 15px;
+            width: 15px;
+            display: block;
+            position: absolute;
+            top: 7px;
+            left: 2px;
+            background-color: #ff6699;
+            box-shadow: 0 0 2px 2px rgba(255, 255, 255, 0.2) inset;
+        }
+    }
+    h3 {
+        font-size: 1.2em;
+        /* 文字の大きさ */
+        font-weight: bold;
+        /* 文字の太さ */
+        color: #fff;
+        /* 文字の色 */
+        background: #ffadd6;
+        /* 背景色 */
+        border-radius: 8px;
+        /* 四隅の丸み */
+        -webkit-border-radius: 8px;
+        /* 四隅の丸みと同じ数字に */
+        -moz-border-radius: 8px;
+        /* 四隅の丸みと同じ数字に */
+        position: relative;
+        margin: 0 0 1.5em;
+        padding: 0.5em 0.4em 0.5em 2em;
+        &:before,
+        &:after {
+            content: "";
+            position: absolute;
+            display: block;
+        }
+        &:before {
+            top: -0.1em;
+            left: 0.5em;
+            width: 20px;
+            height: 23px;
+            padding: 5px 0 0;
+            background: #f69;
+            /* リボン部分の色 */
+            text-align: center;
+        }
+        &:after {
+            top: 0.8em;
+            left: 0.5em;
+            width: 0;
+            height: 0;
+            border: 10px solid;
+            border-color: transparent #f69;
+            /* リボンの切りっぱなし部分の色 */
+        }
+    }
+    .wp_rp_wrap .related_post_title {
+        color: #000;
+        background: #fff;
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        position: relative;
+        &:before {
+            display: none;
+        }
+    }
+    .wp_rp_wrap .related_post_title:after {
+        display: none;
+    }
+    /*黄色ボックス→白ボックス*/
+    .yellowbox {
+        position: relative;
+        padding: 20px 20px 10px;
+        background-color: #fff;
+        margin-bottom: 20px;
+        font-size: 16px;
+        line-height: 25px;
+        border: 3px solid #ccc;
+        border-radius: 3em 0.7em 2em 0.7em/.7em 2em 0.7em 3em;
+    }
+    strong {
+        background-image: linear-gradient(transparent 65%, rgb(255, 170, 170) 50%);
+    }
+}

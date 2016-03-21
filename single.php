@@ -51,11 +51,13 @@
 
 					<?php get_template_part( 'sns' ); //ソーシャルボタン読み込み ?>
 
-					<?php the_content(); //本文 ?>
+					<div class="postWrapper">
+						<?php the_content(); //本文 ?>
+					</div>
 
 					<?php if ( function_exists( 'dynamic_sidebar' ) && dynamic_sidebar( 5 ) ) : else : ?>
 					<?php endif; ?>
-					
+
 					<?php get_template_part( 'sns' ); //ソーシャルボタン読み込み ?>
 					<?php get_template_part( 'popular-thumbnail' ); //任意のエントリ ?>
 					<?php get_template_part( 'st-rank' ); ?>
