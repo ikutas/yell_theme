@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 /*---------------------------------------------------------
 Theme Name: yell
 Theme URI: http://ye11.jp
@@ -12,16 +11,27 @@ Tags: custom-header, custom-menu
 Text Domain: yell
 Version: 20160319
 ---------------------------------------------------------*/
-
 * {
-    font-family: PT Sans Caption, Josefin Sans, "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", Hiragino Kaku Gothic Pro, "ＭＳ Ｐゴシック", sans-serif;
-    margin: 0px;
-    padding: 0px;
+    font-family: PT Sans Caption,Josefin Sans,"メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", Hiragino Kaku Gothic Pro, "ＭＳ Ｐゴシック", sans-serif;
+    margin: 0;
+    padding: 0;
 }
-main, article, aside, header, canvas, details, figcaption, figure, footer, nav, section, summary {
+main,
+article,
+aside,
+header,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+nav,
+section,
+summary {
     display: block;
 }
-html, body {
+html,
+body {
     height: 100%;
 }
 body {
@@ -41,22 +51,23 @@ hr.hrcss {
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
-.fa-question-circle, .fa-check-circle, .fa-exclamation-triangle, .fa-pencil-square-o {
+.fa-question-circle,
+.fa-check-circle,
+.fa-exclamation-triangle,
+.fa-pencil-square-o {
     margin-right: 10px;
 }
-
 /* リンクの色 */
-
 a {
     color: #4682b4;
 }
-
 /* リンクにマウスオーバーした時の色 */
-
 a:hover {
     color: #b22222;
 }
-img, video, object {
+img,
+video,
+object {
     max-width: 100%;
     height: auto;
     border: none;
@@ -67,14 +78,13 @@ img, video, object {
 .inline-img img {
     display: inline!important;
 }
-
 /* 画像リンクのマウスオーバーに透かし */
-
 a:hover img {
     -moz-opacity: 0.8;
     opacity: 0.8;
 }
-img.size-full, img.size-large {
+img.size-full,
+img.size-large {
     margin-bottom: 10px;
     height: auto;
     max-width: 100%;
@@ -82,7 +92,9 @@ img.size-full, img.size-large {
 iframe {
     max-width: 100%;
 }
-.resetwidth img, .resetwidth video, .resetwidth object .resetwidth iframe {
+.resetwidth img,
+.resetwidth video,
+.resetwidth object .resetwidth iframe {
     width: initial;
     /* 初期状態にリセット */
     max-width: initial;
@@ -93,22 +105,16 @@ iframe {
     height: auto;
     max-width: 100%;
 }
-
 /* ロゴ画像の最大サイズ */
-
 .sitename img {
     max-width: 100%;
     margin: 0 auto;
 }
-
 /* スマートフォンは表示しない */
-
 .smanone {
     display: none;
 }
-
 /* clearfix */
-
 .clearfix {
     zoom: 1;
 }
@@ -128,9 +134,7 @@ iframe {
 .bypostauthor {}
 .gallery-caption {}
 .screen-reader-text {}
-
 /* iframeのレスポンシブ */
-
 .youtube-container {
     position: relative;
     padding-bottom: 56.25%;
@@ -145,11 +149,9 @@ iframe {
     width: 100%;
     height: 100%;
 }
-
 /*スライドショー
 * スライド時はdisplay:noneで矢印非表示
 */
-
 .slick-next {
     //display:none!important;
     right: 10px;
@@ -168,28 +170,22 @@ iframe {
     left: auto;
     right: 10px!important;
 }
-
 /*--------------------------------
 各フォント設定
 ---------------------------------*/
-
-
 /* 基本の文字 */
-
 p {
     font-size: 16px;
     line-height: 25px;
     margin-bottom: 20px;
 }
-
 /*ブログタイトル*/
-
 header .sitename {
     font-size: 22px;
     color: #fff;
     line-height: 30px;
     font-family: 'Oswald', sans-serif;
-    padding: 0px;
+    padding: 0;
     margin-bottom: 10px;
 }
 header .sitename a {
@@ -201,9 +197,7 @@ header .sitename a:hover {
     -moz-opacity: 0.8;
     opacity: 0.8;
 }
-
 /*ブログ名の下のキャプション */
-
 header h1 {
     font-size: 12px;
     font-weight: normal;
@@ -211,13 +205,11 @@ header h1 {
 header .descr {
     font-size: 12px;
     font-weight: normal;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     line-height: 20px;
     padding-bottom: 10px;
 }
-
 /* 記事タイトル */
-
 .entry-title {
     font-size: 24px;
     line-height: 30px;
@@ -231,9 +223,7 @@ header .descr {
     color: #333;
     text-decoration: none;
 }
-
 /* 中見出し */
-
 h2 {
     position: relative;
     background: #f3f3f3;
@@ -241,10 +231,7 @@ h2 {
     font-size: 20px;
     line-height: 27px;
     margin-bottom: 20px;
-    padding-top: 10px;
-    padding-right: 20px;
-    padding-bottom: 10px;
-    padding-left: 20px;
+    padding: 10px 20px;
 }
 h2:after {
     content: '';
@@ -265,22 +252,17 @@ h2:before {
     bottom: -10px;
     left: 30px;
 }
-
 /*小見出し*/
-
 .post h3 {
     font-size: 18px;
     margin-bottom: 20px;
     margin-top: 10px;
-    padding-top: 15px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
+    padding: 15px 10px 10px;
     color: #1a1a1a;
     line-height: 27px;
     background-repeat: no-repeat;
     background-position: left center;
-    margin-left: 0px;
+    margin-left: 0;
     border-bottom: 1px #999999 dotted;
 }
 h3 a {
@@ -305,13 +287,12 @@ dd h3 a {
     margin-bottom: 10px;
     font-size: 16px;
 }
-.wp-caption-text a, .wp-caption-text {
+.wp-caption-text a,
+.wp-caption-text {
     font-size: 12px;
     color: #ccc;
 }
-
 /* サイドバーの見出し */
-
 #side aside h4 {
     font-size: 16px;
     font-weight: bold;
@@ -323,9 +304,7 @@ dd h3 a {
     font-size: 15px;
     margin-bottom: 5px;
 }
-
 /* 関連記事の文字 */
-
 .post h4.point {
     font-size: 16px;
     font-weight: bold;
@@ -337,12 +316,10 @@ dd h3 a {
     border-bottom-color: #CCC;
     background-color: transparent;
 }
-
 /* 記事タイトル下 */
-
 .blogbox p {
     font-size: 12px;
-    margin: 0px;
+    margin: 0;
     color: #666666;
     line-height: 15px;
 }
@@ -356,16 +333,14 @@ dd h3 a {
     margin-bottom: 20px;
     padding: 5px;
 }
-
 /*サムネイルなし*/
-
 .no-thumbitiran {
     margin-bottom: 20px;
 }
 .no-thumbitiran h3 {
-    margin-bottom: 0px;
+    margin-bottom: 0;
     font-size: 16px;
-    padding: 0px 0px 5px;
+    padding: 0 0 5px;
 }
 .no-thumbitiran h3 a {
     color: #4682b4;
@@ -374,7 +349,8 @@ dd h3 a {
     color: #1a1a1a;
     text-decoration: none;
 }
-.no-thumbitiran h3 a:hover, .no-thumbitiran h5 a:hover {
+.no-thumbitiran h3 a:hover,
+.no-thumbitiran h5 a:hover {
     color: #b22222;
 }
 .no-thumbitiran p {
@@ -382,36 +358,29 @@ dd h3 a {
 }
 .no-thumbitiran .blog_info p {
     font-size: 12px;
-    margin: 0px;
+    margin: 0;
     color: #666666;
     line-height: 15px;
 }
 .no-thumbitiran .blog_info {
-    margin-bottom: 0px;
+    margin-bottom: 0;
     padding: 5px;
 }
-
 /* 引用 */
-
 .post blockquote {
     background-color: #f3f3f3;
     background-image: url(images/quote.png);
     background-repeat: no-repeat;
     background-position: left top;
-    padding-top: 50px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    padding-left: 20px;
+    padding: 50px 20px 20px;
     margin-top: 20px;
-    margin-right: 0px;
+    margin-right: 0;
     margin-bottom: 20px;
     border-left-width: 1px;
     border-left-style: solid;
     border-left-color: #CCC;
 }
-
 /* オリジナルスタイルsmartphone */
-
 .huto {
     font-weight: bold;
 }
@@ -448,7 +417,12 @@ dd h3 a {
     font-size: 16px;
     line-height: 25px;
 }
-.yellowbox ol, .yellowbox li, .graybox ol, .graybox li, .redbox ol, .redbox li {
+.yellowbox ol,
+.yellowbox li,
+.graybox ol,
+.graybox li,
+.redbox ol,
+.redbox li {
     margin: 0;
 }
 .h2fuu {
@@ -458,10 +432,7 @@ dd h3 a {
     font-size: 20px;
     line-height: 27px;
     margin-bottom: 20px;
-    padding-top: 10px;
-    padding-right: 20px;
-    padding-bottom: 10px;
-    padding-left: 20px;
+    padding: 10px 20px;
     font-weight: bold;
 }
 .h2fuu:after {
@@ -488,20 +459,15 @@ dd h3 a {
     background-image: url(images/quote.png);
     background-repeat: no-repeat;
     background-position: left top;
-    padding-top: 50px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    padding-left: 20px;
+    padding: 50px 20px 20px;
     margin-top: 20px;
-    margin-right: 0px;
+    margin-right: 0;
     margin-bottom: 20px;
     border-left-width: 1px;
     border-left-style: solid;
     border-left-color: #CCC;
 }
-
 /*固定ページの子ページリンク*/
-
 .post article .pagelist-box .kanrenh4 {
     background-color: #FFF;
 }
@@ -509,16 +475,14 @@ dd h3 a {
     list-style-type: none;
 }
 .post article .pagelist-box .st-childlink li p {
-    margin: 0px;
+    margin: 0;
 }
 .post article .pagelist-box .st-childlink {
-    padding: 0px 10px;
+    padding: 0 10px;
 }
-
 /*--------------------------------
 任意の人気記事
 ---------------------------------*/
-
 .post h4.p-entry {
     padding: 8px 15px;
     font-size: 15px;
@@ -535,11 +499,9 @@ dd h3 a {
     color: #fff;
     margin-right: 10px;
 }
-
 /*スクロール用*/
-
 #side h4.p-entry {
-    padding: 5px 0px;
+    padding: 5px 0;
     font-size: 17px;
     color: #FEB20A;
     margin-bottom: 15px;
@@ -558,14 +520,10 @@ dd h3 a {
     font-weight: bold;
     color: #fff;
 }
-
 /*--------------------------------
 フッターコンテンツ
 ---------------------------------*/
-
-
 /* フッター文字 */
-
 #footer h3 {
     font-size: 14px;
     margin-bottom: 10px;
@@ -586,13 +544,15 @@ dd h3 a {
 #footer a:hover {
     color: #b22222;
 }
-#footer .copy, #footer .rcopy {
+#footer .copy,
+#footer .rcopy {
     font-size: 12px;
     color: #999;
     line-height: 15px;
     padding: 20px 10px 0;
 }
-#footer .copy a, #footer .rcopy a {
+#footer .copy a,
+#footer .rcopy a {
     font-size: 12px;
     color: #999;
     line-height: 15px;
@@ -601,31 +561,24 @@ footer h4 a {
     color: #666;
     text-decoration: none;
 }
-
 /*電話番号*/
-
 footer .head-telno a {
     font-family: 'Montserrat', sans-serif;
     font-size: 25px;
     padding: 5px 10px;
     text-align: center;
 }
-
 /*ウィジェットテキスト*/
-
-.headbox, .headbox p {
+.headbox,
+.headbox p {
     font-size: 12px;
     line-height: 18px;
     text-align: center;
 }
-
 /*--------------------------------
 トップページやアーカイブ一覧表示
 ---------------------------------*/
-
-
 /* タイトル名 */
-
 #topnews dd h3 {
     font-size: 20px;
     line-height: 30px;
@@ -659,12 +612,10 @@ footer .head-telno a {
 #topnews .clearfix dd h5 {
     font-size: 16px;
     font-weight: bold;
-    padding: 0px;
+    padding: 0;
     margin-bottom: 5px;
 }
-
 /* 抜粋文字 */
-
 #topnews .clearfix dd p {
     font-size: 16px;
     color: #666;
@@ -674,12 +625,9 @@ footer .head-telno a {
     color: #333;
     text-decoration: none;
 }
-
 /* 一覧タイトル下 */
-
 .kanren .blog_info p {
     margin: 0 0 5px;
-    ;
 }
 .kanren h3 {
     margin: 0 0 5px;
@@ -691,32 +639,26 @@ footer .head-telno a {
 #topnews .clearfix dd .blog_info p {
     font-size: 12px;
 }
-
 /*--------------------------------
 記事下の一括表示部分
 ---------------------------------*/
-
 .kizi-under-box {
     margin-bottom: 20px;
 }
-
 /*--------------------------------
 関連記事表示部分
 ---------------------------------*/
-
 .kanren {
     padding-top: 10px;
 }
 .kadomaru img {
     border-radius: 100px;
 }
-
 /* タイトル名 */
-
 .kanren dd h5 {
     font-size: 16px;
     font-weight: bold;
-    padding: 0px;
+    padding: 0;
     margin-bottom: 5px;
 }
 .kanren dt {
@@ -741,9 +683,7 @@ footer .head-telno a {
     padding-bottom: 20px;
     border-style: none;
 }
-
 /* 抜粋文字 */
-
 .kanren .clearfix dd p {
     font-size: 13px;
     color: #666;
@@ -756,19 +696,17 @@ footer .head-telno a {
 .kanren .clearfix dd h5 a:hover {
     color: #b22222;
 }
-
 /*--------------------------------
 サイドバー
 ---------------------------------*/
-
 #side aside ul li {
     list-style-type: none;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 #side aside ul li ul li {
     list-style-type: none;
-    margin: 0px;
+    margin: 0;
     padding-left: 30px;
     background-image: url(images/arrow_gray.png);
     background-repeat: no-repeat;
@@ -778,11 +716,8 @@ footer .head-telno a {
     font-size: 14px;
     font-weight: bold;
     line-height: 25px;
-    margin: 0px;
-    padding-top: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    padding-left: 0px;
+    margin: 0;
+    padding: 10px 10px 10px 0;
 }
 #side aside #mybox ul li ul li {
     font-size: 14px;
@@ -791,9 +726,7 @@ footer .head-telno a {
 #side aside #mybox ul {
     margin-bottom: 10px;
 }
-
 /* RSS購読するボタン */
-
 .rssbox a {
     display: block;
     width: 100%;
@@ -813,11 +746,9 @@ footer .head-telno a {
 #scrollad {
     padding: 10px 0;
 }
-
 /*--------------------------------
 サイドバー固定ページ用のナビ
 ---------------------------------*/
-
 #sidebg {
     background: #f3f3f3;
     margin-bottom: 10px;
@@ -826,37 +757,31 @@ footer .head-telno a {
 #side aside h4.menu_underh2 {
     padding-left: 10px;
 }
-
 /*ulタグの階層*/
-
 #side aside .st-pagelists ul {
-    padding: 0px;
+    padding: 0;
 }
 #side aside .st-pagelists .children {
-    padding: 5px 0px;
+    padding: 5px 0;
 }
 #side aside .st-pagelists .children li .children {
-    padding: 0px 10px 0px 0px;
+    padding: 0 10px 0 0;
 }
-
 /*liタグの階層*/
-
 #side aside .st-pagelists ul li {
-    padding: 0px;
+    padding: 0;
     background-image: none;
 }
 #side aside .st-pagelists ul li ul li {
-    padding: 0px 10px;
+    padding: 0 10px;
     background-image: none;
 }
 #side aside .st-pagelists ul li li li li {
-    padding: 0px 10px;
+    padding: 0 10px;
     background-image: none;
     border-bottom: none;
 }
-
 /*aタグの階層*/
-
 #side aside .st-pagelists ul li a {
     text-decoration: none;
     padding: 5px 10px;
@@ -869,9 +794,9 @@ footer .head-telno a {
     /*Other Browser*/
     background: #91bae4;
     /*For Old WebKit*/
-    background: -webkit-linear-gradient( #1584C4 0%, #0277BD 100%);
+    background: -webkit-linear-gradient( #1584C4 0%, #0277BD 100% );
     /*For Modern Browser*/
-    background: linear-gradient( #1584C4 0%, #0277BD 100%);
+    background: linear-gradient( #1584C4 0%, #0277BD 100% );
 }
 #side aside .st-pagelists ul li a:hover {
     -moz-opacity: 0.8;
@@ -879,7 +804,7 @@ footer .head-telno a {
 }
 #side aside .st-pagelists .children a {
     text-decoration: none;
-    padding: 0px 10px;
+    padding: 0 10px;
     background: transparent;
     background-repeat: no-repeat;
     background-position: left center;
@@ -893,35 +818,31 @@ footer .head-telno a {
 }
 #side aside .st-pagelists .children li .children a {
     text-decoration: none;
-    padding: 0px 0px 0px 10px;
+    padding: 0 0 0 10px;
     background: transparent;
     background-repeat: no-repeat;
     background-position: left center;
     color: #000;
     border: none;
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 #side aside .st-pagelists .children li .children a:hover {
     color: #ff0000;
 }
 #side aside .st-pagelists .children li .children .children li a {
     text-decoration: underline;
-    padding: 0px 10px 0px 20px;
+    padding: 0 10px 0 20px;
     background: transparent;
     background-repeat: no-repeat;
     background-position: left center;
     color: #000;
     border: none;
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
-
 /*--------------------------------
 エディタ用
 ---------------------------------*/
-
-
 /*テーブル */
-
 .post table {
     border-top: 1px #999 solid;
     border-right: 1px #999 solid;
@@ -955,7 +876,7 @@ table th {
     line-height: 18px;
 }
 .post table tr:nth-child(even) {
-    background-color: rgba(220, 220, 220, 0.2);
+    background-color: rgba(220,220,220,0.2);
 }
 #main .post table {
     border-top-width: 1px;
@@ -966,9 +887,7 @@ table th {
     border-right-color: #999;
     color: #333;
 }
-
 /*テーブル（装飾なし） */
-
 .post .notab table {
     border: none;
     width: initial;
@@ -987,9 +906,7 @@ table th {
 .post .notab table tr:nth-child(even) {
     background-color: transparent;
 }
-
 /*スクロール*/
-
 .scroll-box {
     overflow-x: auto;
     margin-bottom: 10px;
@@ -1005,9 +922,7 @@ table th {
     border-radius: 5px;
     background: #ccc;
 }
-
 /*画像 */
-
 img.alignright {
     display: block;
     margin: 0 0 0 auto;
@@ -1038,15 +953,10 @@ img.float-right {
 .ie8 img {
     width: auto;
 }
-
 /*リスト */
-
 .post ul {
     list-style-type: disc;
-    padding-top: 10px;
-    padding-right: 20px;
-    padding-bottom: 10px;
-    padding-left: 30px;
+    padding: 10px 20px 10px 30px;
     margin-bottom: 20px;
 }
 .post ul li {
@@ -1055,37 +965,34 @@ img.float-right {
 }
 .post ol {
     list-style-type: decimal;
-    padding-top: 10px;
-    padding-right: 10px;
-    padding-bottom: 20px;
-    padding-left: 30px;
+    padding: 10px 10px 20px 30px;
     margin-bottom: 20px;
 }
 .post ol li {
     font-size: 17px;
     line-height: 27px;
 }
-
 /*フォーム*/
-
-input, textarea {
+input,
+textarea {
     box-sizing: border-box;
     max-width: 100%;
     padding: 5px;
 }
-
 /*レスポンシブ用PC左右コンテンツ*/
-
-.responbox, .responbox30, .responbox50, .responbox60, .responbox70 {
+.responbox,
+.responbox30,
+.responbox50,
+.responbox60,
+.responbox70 {
     margin-bottom: 10px;
 }
 .responbox .lbox {
     margin-bottom: 10px;
 }
-
 /*AmazonJS*/
-
-.post .amazonjs_item h4, .post .amazonjs_item h4 a {
+.post .amazonjs_item h4,
+.post .amazonjs_item h4 a {
     color: #1a1a1a;
     font-size: 15px;
     background-color: transparent;
@@ -1093,11 +1000,9 @@ input, textarea {
 .post .amazonjs_item ul li {
     font-size: 12px!important;
 }
-
 /*--------------------------------
 アコーディオンメニュー
 ---------------------------------*/
-
 .menu-navigation-container {
     overflow: hidden;
 }
@@ -1111,25 +1016,25 @@ nav li a:hover {
     margin: 0;
 }
 #s-navi dl.acordion {
-    margin: 0px;
+    margin: 0;
     box-sizing: border-box;
     width: 100%;
 }
 #s-navi dt.trigger {
     text-align: right;
-    padding: 10px 0px;
+    padding: 10px 0;
     cursor: pointer;
 }
 #s-navi dt.trigger .op {
     font-size: 25px;
     color: #333;
-    padding: 0px 10px;
+    padding: 0 10px;
 }
 #s-navi dd.acordion_tree {
-    padding: 10px 0px 30px;
+    padding: 10px 0 30px;
     display: none;
     overflow: hidden;
-    top: 0px;
+    top: 0;
     width: 100%;
     box-sizing: border-box;
     text-align: left;
@@ -1146,19 +1051,17 @@ nav li a:hover {
 }
 .acordion_tree ul.menu li:last-child {
     border: none;
-    padding-bottom: 0px;
+    padding-bottom: 0;
 }
 .acordion_tree ul.menu li a {
     text-decoration: none;
     color: #000;
 }
-
 /*--------------------------------
 検索フォーム
 ---------------------------------*/
-
 #side aside #search {
-    padding-bottom: 0px;
+    padding-bottom: 0;
     position: relative;
     width: 100%;
 }
@@ -1182,8 +1085,8 @@ nav li a:hover {
 #searchsubmit {
     border-radius: 0;
     position: absolute;
-    right: 0px;
-    top: 0px;
+    right: 0;
+    top: 0;
     width: 50px;
     height: 34px;
     z-index: 20;
@@ -1191,9 +1094,7 @@ nav li a:hover {
 *:first-child + html #searchsubmit {
     top: 1px;
 }
-
 /*フッター*/
-
 .footermenust {
     text-align: center;
     padding: 20px;
@@ -1213,21 +1114,17 @@ footer .footermenust li:last-child {
     border-right: none;
 }
 #footer .footermenust a {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     font-size: 12px;
     color: #757575;
 }
-
 /*--------------------------------
 ページャー
 ---------------------------------*/
-
-
 /*コメントナビ*/
-
 .st-pagelink {
-    padding: 20px 0px;
+    padding: 20px 0;
 }
 .st-pagelink a {
     text-decoration: none;
@@ -1244,16 +1141,14 @@ footer .footermenust li:last-child {
     font-size: 14px;
     line-height: 13px;
     margin-bottom: 20px;
-    padding-top: 20px;
-    padding-right: 0;
-    padding-bottom: 20px;
-    padding-left: 0;
+    padding: 20px 0;
 }
-.pagination span, .pagination a {
+.pagination span,
+.pagination a {
     display: block;
     float: left;
     margin: 2px 2px 2px 0;
-    padding: 6px 9px 5px 9px;
+    padding: 6px 9px 5px;
     text-decoration: none;
     width: auto;
     color: #fff;
@@ -1264,15 +1159,13 @@ footer .footermenust li:last-child {
     background-color: #666666;
 }
 .pagination .current {
-    padding: 6px 9px 5px 9px;
+    padding: 6px 9px 5px;
     color: #fff;
     background-color: #CCCCCC;
 }
-
 /*--------------------------------
 ぱんくず
 ---------------------------------*/
-
 #breadcrumb {
     font-size: 13px;
     color: #ccc;
@@ -1283,11 +1176,11 @@ footer .footermenust li:last-child {
 }
 div#breadcrumb {
     padding: 0 0 5px;
-    margin: 0 0 0px;
+    margin: 0;
     clear: both;
 }
 div#breadcrumb a {
-    color: #ccc
+    color: #ccc;
 }
 div#breadcrumb div {
     display: inline;
@@ -1297,11 +1190,9 @@ div#breadcrumb div {
     color: #666;
     text-decoration: none;
 }
-
 /*--------------------------------
 SNS
 ---------------------------------*/
-
 .sns {
     margin-bottom: 20px;
 }
@@ -1311,8 +1202,8 @@ SNS
 }
 .post .sns ul {
     list-style: none;
-    padding: 0px;
-    margin: 0px 0px 20px;
+    padding: 0;
+    margin: 0 0 20px;
 }
 .sns li {
     float: left;
@@ -1331,9 +1222,7 @@ SNS
     text-decoration: none;
 }
 .sns li a:hover {}
-
 /* ツイッター */
-
 .sns .twitter a {
     background: #55acee;
 }
@@ -1345,9 +1234,7 @@ SNS
     padding-left: 10px;
     margin-left: 10px;
 }
-
 /* Facebook */
-
 .sns .facebook a {
     background: #3b5998;
 }
@@ -1359,9 +1246,7 @@ SNS
     padding-left: 10px;
     margin-left: 5px;
 }
-
 /* グーグル */
-
 .sns .googleplus a {
     background: #dc4e41;
 }
@@ -1373,9 +1258,7 @@ SNS
     padding-left: 10px;
     margin-left: 5px;
 }
-
 /* はてぶ */
-
 .sns .hatebu a {
     background: #00a5de;
 }
@@ -1387,18 +1270,14 @@ SNS
     padding-left: 10px;
     margin-left: 3px;
 }
-
 /* LINE */
-
 .sns .line a {
     background: #25af00;
 }
 .sns .line a:hover {
     background: #219900;
 }
-
 /* Pocket */
-
 .sns .pocket a {
     background: #f03e51;
 }
@@ -1410,11 +1289,9 @@ SNS
 .sns .pocket a:hover {
     background: #c0392b;
 }
-
 /*--------------------------------
 カレンダー
 ---------------------------------*/
-
 #wp-calendar {
     border-collapse: collapse;
     border-top-width: 1px;
@@ -1439,7 +1316,7 @@ SNS
 }
 #wp-calendar td {
     text-align: center;
-    padding: 0px;
+    padding: 0;
     background-color: #fff;
 }
 #wp-calendar caption {
@@ -1452,16 +1329,14 @@ SNS
 #wp-calendar tbody tr #today {
     background-color: #b0e0e6;
 }
-
 /*--------------------------------
 PAGE TOP
 ---------------------------------*/
-
 #page-top {
     position: fixed;
     z-index: 9999;
     bottom: 20px;
-    right: 0px;
+    right: 0;
     font-size: 20px;
 }
 #page-top a {
@@ -1479,11 +1354,9 @@ PAGE TOP
     background: #999;
     color: #fff;
 }
-
 /*--------------------------------
 コメント
 ---------------------------------*/
-
 #comments p a {
     color: #333;
 }
@@ -1494,7 +1367,7 @@ PAGE TOP
     font-size: 14px;
     font-weight: normal;
     line-height: 20px;
-    margin: 0px;
+    margin: 0;
     color: #333;
     padding: 5px 0;
 }
@@ -1512,10 +1385,7 @@ PAGE TOP
     font-size: 14px;
     line-height: 20px;
     color: #333;
-    padding-top: 10px;
-    padding-right: 20px;
-    padding-bottom: 10px;
-    padding-left: 20px;
+    padding: 10px 20px;
     margin-bottom: 20px;
 }
 .comment-body {
@@ -1536,10 +1406,7 @@ PAGE TOP
     height: 15px;
     width: 100%;
     clear: both;
-    padding-top: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    padding-left: 0px;
+    padding: 10px 10px 10px 0;
 }
 .reply {
     padding: 5px;
@@ -1549,10 +1416,7 @@ PAGE TOP
     font-size: 16px;
     font-weight: bold;
     margin-bottom: 10px;
-    padding-top: 5px;
-    padding-right: 10px;
-    padding-bottom: 5px;
-    padding-left: 10px;
+    padding: 5px 10px;
     color: #666;
 }
 #comments #commentform .tags {
@@ -1564,11 +1428,11 @@ PAGE TOP
     padding: 10px;
 }
 #comments .commets-list {
-    padding-left: 0px;
+    padding-left: 0;
     list-style-type: none;
 }
 ul.children {
-    padding: 0px;
+    padding: 0;
 }
 .commets-list li {
     list-style-type: none;
@@ -1581,16 +1445,14 @@ ul.children {
     font-size: 13px;
     line-height: 18px;
 }
-
 /* コメント欄の下にある使用できるタグの表記を消す */
-
 .form-allowed-tags {
     display: none;
 }
 #comments h3 {
     background-image: none;
     border: none;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     padding: 0;
 }
 #comments h4 {
@@ -1598,7 +1460,7 @@ ul.children {
     font-size: 16px;
     padding: 0;
     border: none;
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 #comments textarea {
     margin-bottom: 10px;
@@ -1612,9 +1474,7 @@ ul.children {
     border-radius: 2px;
     border: 1px #f2f2f2 solid;
 }
-
 /* コメントボタン */
-
 #comments input[type="submit"] {
     background-color: #f3f3f3;
     padding: 10px;
@@ -1622,11 +1482,9 @@ ul.children {
     border-radius: 3px;
     border: 1px #f2f2f2 solid;
 }
-
 /*--------------------------------
 PREV NEXT
 ---------------------------------*/
-
 .p-navi dl dt {
     font-weight: bold;
     font-size: 14px;
@@ -1640,11 +1498,9 @@ PREV NEXT
     padding-left: 55px;
     line-height: 27px;
 }
-
 /*--------------------------------
 NEWS（お知らせ）
 ---------------------------------*/
-
 #topnews-box div {
     padding: 0 10px 10px;
 }
@@ -1660,7 +1516,7 @@ NEWS（お知らせ）
     border: 1px solid #ccc;
     margin-bottom: 20px;
     background: #fff;
-    padding: 5px 15px!important;
+    padding: 5px 15px !important;
     margin-top: -10px;
 }
 .rss-bar a {
@@ -1688,11 +1544,9 @@ NEWS（お知らせ）
 #topnews-box div dl dd a:hover {
     color: #b22222;
 }
-
 /*--------------------------------
 スライドショー
 ---------------------------------*/
-
 #header-slides[dir="rtl"] {
     direction: rtl;
 }
@@ -1705,10 +1559,8 @@ NEWS（お知らせ）
 .slick-slider {
     margin-bottom: 0;
 }
-
 /*レイアウト スマートフォン
 ----------------------------------------------------*/
-
 #wrapper {
     max-width: 1000px;
     padding: 0 15px;
@@ -1716,14 +1568,14 @@ NEWS（お知らせ）
     background-color: #fff;
 }
 body.fixed-footer #wrapper {
-    height: 100 %;
+    height: 100%;
     min-height: 100%;
 }
 header {
     text-align: center;
 }
 #headbox {
-    padding: 0px 15px;
+    padding: 0 15px;
     margin: 0 -15px;
 }
 footer {
@@ -1733,16 +1585,16 @@ footer {
     margin: 0 -15px;
 }
 #header-l {
-    padding: 0px 10px 0;
+    padding: 0 10px;
 }
 #gazou {
-    margin: 0px 0 10px;
+    margin: 0 0 10px;
 }
 #gazou-wide {
-    margin: 0px -15px 10px;
+    margin: 0 -15px 10px;
 }
 #gazou p {
-    margin: 0px;
+    margin: 0;
 }
 main {
     background-color: #fff;
@@ -1754,21 +1606,27 @@ section {
 }
 .ad {
     padding-bottom: 10px;
-    margin: 0px -5px;
+    margin: 0 -5px;
 }
 .post {
     overflow: hidden;
 }
-
 /*-------------------------------------
 カラム1適用
 --------------------------------------*/
-
 .colum1 #side {}
-
 /*LP化--------------------------------*/
-
-.lp header, .lp #gazou, .lp #itiran, .lp .kanren, .lp #breadcrumb, .lp nav, .lp .blogbox, .lp .tagst, .lp .point, .lp .p-navi, .lp .pagination {
+.lp header,
+.lp #gazou,
+.lp #itiran,
+.lp .kanren,
+.lp #breadcrumb,
+.lp nav,
+.lp .blogbox,
+.lp .tagst,
+.lp .point,
+.lp .p-navi,
+.lp .pagination {
     display: none;
 }
 .lp .entry-title {
@@ -1776,43 +1634,39 @@ section {
     color: #ccc;
     line-height: 18px;
 }
-.lp post img, .lp post video, .lp post object, {
+.lp post img,
+.lp post video,
+.lp post object,
+ {
     width: 100% !important;
     height: auto;
     border: none;
     vertical-align: bottom;
     display: block;
 }
-
 /* IEのみ
 ---------------------------------------*/
-
 @media all and (-ms-high-contrast:none) {
     .rss-bar {
-        padding-top: 5px!important;
+        padding-top: 5px !important;
     }
     #s {
         color: #ccc;
-        padding-top: 7px!important;
+        padding-top: 7px !important;
     }
 }
-
 /*media Queries タブレットサイズ
 ----------------------------------------------------*/
-
 @media only screen and (max-width: 780px) {
     #side aside {
         clear: both;
         float: none;
         width: auto;
         position: static !important;
-        ;
     }
 }
-
 /*media Queries タブレットサイズ
 ----------------------------------------------------*/
-
 @media only screen and (min-width: 414px) {
     #wrapper {
         padding: 0 20px;
@@ -1821,7 +1675,7 @@ section {
         text-align: left;
     }
     #headbox {
-        padding: 0px 20px;
+        padding: 0 20px;
         margin: 0 -20px;
     }
     footer {
@@ -1839,14 +1693,14 @@ section {
     }
     .ad {
         padding-bottom: 10px;
-        margin: 0px;
+        margin: 0;
     }
     #gazou {
-        padding: 0px;
-        margin: 0px 0 10px;
+        padding: 0;
+        margin: 0 0 10px;
     }
     #gazou-wide {
-        margin: 0px -20px 10px;
+        margin: 0 -20px 10px;
     }
     /*レスポンシブ用PC左右コンテンツ*/
     .responbox .lbox img {
@@ -1928,9 +1782,9 @@ NEWS（お知らせ）
         /*Other Browser*/
         background: #91bae4;
         /*For Old WebKit*/
-        background: -webkit-linear-gradient( #fff 0%, #f3f3f3 100%);
+        background: -webkit-linear-gradient( #fff 0%, #f3f3f3 100% );
         /*For Modern Browser*/
-        background: linear-gradient( #fff 0%, #f3f3f3 100%);
+        background: linear-gradient( #fff 0%, #f3f3f3 100% );
     }
     #topnews-box dt {
         font-size: 14px;
@@ -1966,15 +1820,15 @@ NEWS（お知らせ）
     #topnews .clearfix dd h5 {
         font-size: 24px;
         font-weight: bold;
-        padding: 0px;
+        padding: 0;
         margin-bottom: 5px;
     }
     #topnews .clearfix dd p {
         font-size: 13px;
         color: #666;
         line-height: 24px;
-        margin: 0px;
-        padding: 0px;
+        margin: 0;
+        padding: 0;
     }
     #topnews .clearfix dd h5 a {
         color: #333;
@@ -1987,7 +1841,7 @@ NEWS（お知らせ）
         display: none;
     }
     .colum1 main {
-        margin: 0px;
+        margin: 0;
         padding: 20px 10px;
     }
     .colum1 .st-pagelink {
@@ -1995,10 +1849,8 @@ NEWS（お知らせ）
     }
     /*-- ここまで --*/
 }
-
 /*media Queries PCサイズ
 ----------------------------------------------------*/
-
 @media only screen and (min-width: 781px) {
     /*--------------------------------
 メニュー
@@ -2006,17 +1858,17 @@ NEWS（お知らせ）
     nav.smanone {
         border-radius: 1px;
         border: solid 1px #E0DEDE;
-        margin-bottom: 0px;
-        padding: 0px 6px;
+        margin-bottom: 0;
+        padding: 0 6px;
         /*Other Browser*/
         background: #f3f3f3;
         /*For Old WebKit*/
-        background: -webkit-linear-gradient( #fff 0%, #f3f3f3 100%);
+        background: -webkit-linear-gradient( #fff 0%, #f3f3f3 100% );
         /*For Modern Browser*/
-        background: linear-gradient( #fff 0%, #f3f3f3 100%);
+        background: linear-gradient( #fff 0%, #f3f3f3 100% );
     }
     #gazou-wide nav.smanone {
-        padding: 0px 46px;
+        padding: 0 46px;
         border-left: none;
         border-right: none;
     }
@@ -2096,7 +1948,7 @@ NEWS（お知らせ）
         margin: 0 -30px;
     }
     #header-l {
-        padding: 0px;
+        padding: 0;
     }
     nav {
         display: block;
@@ -2106,10 +1958,12 @@ NEWS（お知らせ）
         padding: 0;
     }
     #gazou-wide {
-        margin: 0px -30px 10px;
+        margin: 0 -30px 10px;
     }
     /*IEで要素がズレるのを対応*/
-    .ie7 aside ul li, .ie8 aside ul li, .ie9 aside ul li {
+    .ie7 aside ul li,
+    .ie8 aside ul li,
+    .ie9 aside ul li {
         display: list-item;
         padding: 0;
     }
@@ -2209,11 +2063,11 @@ NEWS（お知らせ）
         max-width: 400px;
     }
     #header-r p {
-        margin: 0px;
+        margin: 0;
     }
     /*ヘッダーリンク*/
     #header-r .footermenust {
-        padding: 0px;
+        padding: 0;
         text-align: right;
     }
     #header-r .footermenust li {
@@ -2253,16 +2107,14 @@ NEWS（お知らせ）
         font-size: 11px;
         line-height: 13px;
         margin-bottom: 20px;
-        padding-top: 20px;
-        padding-right: 0;
-        padding-bottom: 20px;
-        padding-left: 0;
+        padding: 20px 0;
     }
-    .pagination span, .pagination a {
+    .pagination span,
+    .pagination a {
         display: block;
         float: left;
         margin: 2px 2px 2px 0;
-        padding: 6px 9px 5px 9px;
+        padding: 6px 9px 5px;
         text-decoration: none;
         width: auto;
         color: #fff;
@@ -2273,7 +2125,7 @@ NEWS（お知らせ）
         background-color: #666666;
     }
     .pagination .current {
-        padding: 6px 9px 5px 9px;
+        padding: 6px 9px 5px;
         color: #fff;
         background-color: #CCCCCC;
     }
@@ -2294,15 +2146,15 @@ NEWS（お知らせ）
     }
     main {
         margin-right: 320px;
-        margin-left: 0px;
+        margin-left: 0;
         background-color: #fff;
         border-radius: 4px;
-        padding: 20px 10px 20px 0px;
+        padding: 20px 10px 20px 0;
     }
     #side aside {
         float: right;
         width: 300px;
-        padding: 0px;
+        padding: 0;
     }
     /*--------------------------------
 	PCのレイアウト（左サイドバー）
@@ -2332,11 +2184,11 @@ NEWS（お知らせ）
 }
 h2 {
     position: relative;
-    margin: 0 12px 25px 0px;
-    padding: 14px 15px 0px 20px;
+    margin: 0 12px 25px 0;
+    padding: 14px 15px 0 20px;
     color: #333;
     background: #ffc;
-    box-shadow: 12px 0 0 0 #ffc, 0 12px 0 0 #ffc, 1px 15px 4px -3px rgba(0, 0, 0, 0.2);
+    box-shadow: 12px 0 0 0 #ffc, 0 12px 0 0 #ffc, 1px 15px 4px -3px rgba(0,0,0,0.2);
 }
 h2:before {
     display: none;
@@ -2373,7 +2225,8 @@ h2:after {
     margin: 0 0 1.5em;
     padding: 0.5em 0.4em 0.5em 2em;
 }
-.post h3:before, .post h3:after {
+.post h3:before,
+.post h3:after {
     content: "";
     position: absolute;
     display: block;
@@ -2383,7 +2236,7 @@ h2:after {
     left: 0.5em;
     width: 20px;
     height: 23px;
-    padding: 5px 0 0 0;
+    padding: 5px 0 0;
     background: #f69;
     /* リボン部分の色 */
     text-align: center;
@@ -2405,10 +2258,12 @@ h2:after {
     -moz-border-radius: 0;
     position: relative;
 }
-.wp_rp_wrap .related_post_title:before, .post h3.rankh3:before {
+.wp_rp_wrap .related_post_title:before,
+.post h3.rankh3:before {
     display: none;
 }
-.wp_rp_wrap .related_post_title:after, .post h3.rankh3:after {
+.wp_rp_wrap .related_post_title:after,
+.post h3.rankh3:after {
     display: none;
 }
 .post h4 {
@@ -2418,7 +2273,7 @@ h2:after {
     font-weight: bold;
     font-size: 18px;
     line-height: 38px;
-    margin: 0 0 10px 0;
+    margin: 0 0 10px;
 }
 .post h4:before {
     content: '';
@@ -2432,8 +2287,8 @@ h2:after {
     top: 14px;
     left: 7px;
     background-color: #FFADD6;
-    box-shadow: 0 0 2px 2px rgba(255, 255, 255, 0.2) inset;
-    filter: alpha(opacity=50);
+    box-shadow: 0 0 2px 2px rgba(255,255,255,0.2) inset;
+    filter:alpha(opacity=50);
     -moz-opacity: 0.50;
     -khtml-opacity: 0.50;
     opacity: 0.50;
@@ -2451,11 +2306,9 @@ h2:after {
     top: 7px;
     left: 2px;
     background-color: #ff6699;
-    box-shadow: 0 0 2px 2px rgba(255, 255, 255, 0.2) inset
+    box-shadow: 0 0 2px 2px rgba(255,255,255,0.2) inset;
 }
-
 /*黄色ボックス→白ボックス*/
-
 .yellowbox {
     position: relative;
     padding: 20px 20px 10px;
@@ -2464,7 +2317,7 @@ h2:after {
     font-size: 16px;
     line-height: 25px;
     border: 3px solid #ccc;
-    border-radius: 3em .7em 2em .7em/.7em 2em .7em 3em;
+    border-radius: 3em 0.7em 2em 0.7em/.7em 2em 0.7em 3em;
 }
 .post strong {
     background-image: linear-gradient(transparent 65%, rgb(255, 170, 170) 50%);
