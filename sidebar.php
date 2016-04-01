@@ -13,7 +13,7 @@
 		if ( ( is_home() && $stdata11 === 'yes' ) || ( $column1 === 'yes' && !is_home() && !is_archive() ) ) {
 		} elseif ( ( is_home() && $stdata11 === 'lp' ) || ( $column1 === 'lp' && !is_home() && !is_archive() ) ) {
 		} else {
-	
+
 	?>
 <div id="side">
 	<aside>
@@ -24,7 +24,7 @@
 				<?php endif; ?>
 			</div>
 		<?php } ?>
-		
+
 		<?php if ( $GLOBALS["stdata16"] === '' ) { ?>
 			<!-- RSSボタンです -->
 			<div class="rssbox">
@@ -56,3 +56,7 @@
 <!-- /#side -->
 <?php }
 } ?>
+<div class="waku top"></div>
+<div class="waku left"></div>
+<div class="waku right"></div>
+<div class="waku bottom"></div>

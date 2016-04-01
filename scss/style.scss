@@ -23,9 +23,9 @@ hr.hrcss {
 }
 /* リンクの色 */
 a {
-    color: #4682b4;
+    color: #2c96c4;
     &:hover {
-        color: #b22222;
+        color: #FFADD6;
     }
 }
 /* リンクにマウスオーバーした時の色 */
@@ -151,8 +151,9 @@ p {
 }
 /* 記事タイトル */
 .entry-title {
+    display: inline;
     font-size: 24px;
-    line-height: 30px;
+    line-height: 1.5em;
     color: #333;
     margin-bottom: 10px;
     a {
@@ -166,30 +167,23 @@ p {
 /* 中見出し */
 h2 {
     position: relative;
-    background: #f3f3f3;
-    color: #1a1a1a;
-    font-size: 20px;
-    line-height: 27px;
-    margin-bottom: 20px;
-    padding: 10px 20px;
+    margin: 0 20px 35px 0;
+    padding: 14px 0 0 20px;
+    color: #333;
+    background: #ffc;
+    box-shadow: 20px 0 0 0 #ffc, 0 20px 0 0 #ffc, 1px 15px 4px -3px rgba(0, 0, 0, 0.2);
     &:after {
-        content: '';
+        content: " ";
         position: absolute;
-        border-top: 10px solid #f3f3f3;
-        border-right: 10px solid transparent;
-        border-left: 10px solid transparent;
-        bottom: -10px;
-        left: 30px;
-        border-radius: 2px;
-    }
-    &:before {
-        content: '';
-        position: absolute;
-        border-top: 10px solid #f3f3f3;
-        border-right: 10px solid transparent;
-        border-left: 10px solid transparent;
-        bottom: -10px;
-        left: 30px;
+        right: -20px;
+        bottom: -20px;
+        width: 0;
+        height: 0;
+        border-width: 20px 20px 0 0;
+        border-style: solid;
+        border-color: transparent;
+        border-top-color: #cc9;
+        border-radius: 0;
     }
 }
 /*小見出し*/
@@ -216,12 +210,10 @@ dd h3 {
         background-repeat: no-repeat;
         background-position: left center;
         margin-left: 0;
-        border-bottom: 1px #999999 dotted;
     }
     h4 {
         padding: 10px 15px;
         margin-bottom: 20px;
-        background-color: #f3f3f3;
         line-height: 24px;
         &.point {
             font-size: 16px;
@@ -2036,16 +2028,6 @@ NEWS（お知らせ）
         margin-bottom: 20px;
         a:hover {
             text-decoration: underline;
-        }
-    }
-    /*中見出し*/
-    h2 {
-        font-size: 20px;
-        line-height: 30px;
-        &:after,
-        &:before {
-            bottom: -10px;
-            left: 50px;
         }
     }
     /*小見出し*/

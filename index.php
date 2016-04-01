@@ -10,7 +10,7 @@
 					<?php get_template_part( 'st-rank' ); //ランキング ?>
 
 				<?php endif; ?>
-				<aside>		
+				<aside>
 					<?php get_template_part( 'itiran' ); ?>
 				</aside>
 					<?php get_template_part( 'sns-top' ); //ソーシャルボタン読み込み ?>

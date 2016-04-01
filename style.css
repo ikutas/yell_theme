@@ -83,9 +83,9 @@ hr.hrcss {
 
 /* リンクの色 */
 a {
-  color: #4682b4; }
+  color: #2c96c4; }
   a:hover {
-    color: #b22222; }
+    color: #FFADD6; }
 
 /* リンクにマウスオーバーした時の色 */
 img,
@@ -194,8 +194,9 @@ p {
 
 /* 記事タイトル */
 .entry-title {
+  display: inline;
   font-size: 24px;
-  line-height: 30px;
+  line-height: 1.5em;
   color: #333;
   margin-bottom: 10px; }
   .entry-title a {
@@ -207,29 +208,23 @@ p {
 /* 中見出し */
 h2 {
   position: relative;
-  background: #f3f3f3;
-  color: #1a1a1a;
-  font-size: 20px;
-  line-height: 27px;
-  margin-bottom: 20px;
-  padding: 10px 20px; }
+  margin: 0 20px 35px 0;
+  padding: 14px 0 0 20px;
+  color: #333;
+  background: #ffc;
+  box-shadow: 20px 0 0 0 #ffc, 0 20px 0 0 #ffc, 1px 15px 4px -3px rgba(0, 0, 0, 0.2); }
   h2:after {
-    content: '';
+    content: " ";
     position: absolute;
-    border-top: 10px solid #f3f3f3;
-    border-right: 10px solid transparent;
-    border-left: 10px solid transparent;
-    bottom: -10px;
-    left: 30px;
-    border-radius: 2px; }
-  h2:before {
-    content: '';
-    position: absolute;
-    border-top: 10px solid #f3f3f3;
-    border-right: 10px solid transparent;
-    border-left: 10px solid transparent;
-    bottom: -10px;
-    left: 30px; }
+    right: -20px;
+    bottom: -20px;
+    width: 0;
+    height: 0;
+    border-width: 20px 20px 0 0;
+    border-style: solid;
+    border-color: transparent;
+    border-top-color: #cc9;
+    border-radius: 0; }
 
 /*小見出し*/
 h3 a {
@@ -252,12 +247,10 @@ dd h3 {
   line-height: 27px;
   background-repeat: no-repeat;
   background-position: left center;
-  margin-left: 0;
-  border-bottom: 1px #999999 dotted; }
+  margin-left: 0; }
 .post h4 {
   padding: 10px 15px;
   margin-bottom: 20px;
-  background-color: #f3f3f3;
   line-height: 24px; }
   .post h4.point {
     font-size: 16px;
@@ -1806,14 +1799,6 @@ NEWS（お知らせ）
     .entry-title a:hover {
       text-decoration: underline; }
 
-  /*中見出し*/
-  h2 {
-    font-size: 20px;
-    line-height: 30px; }
-    h2:after, h2:before {
-      bottom: -10px;
-      left: 50px; }
-
   /*小見出し*/
   .post h3 {
     font-size: 18px;
@@ -1950,107 +1935,369 @@ NEWS（お知らせ）
     float: right;
     width: 300px;
     padding: 0; } }
+@font-face {
+  font-family: 'LondrinaShadow';
+  src: url(./fonts/LondrinaShadow-Regular.ttf); }
+.font--LondrinaShadow {
+  font-family: 'LondrinaShadow', sans-serif; }
+
+.breadcrumb__arrow {
+  font-family: 'LondrinaShadow', sans-serif;
+  color: #333;
+  font-size: 140%; }
+
+#content .waku {
+  pointer-events: none;
+  position: fixed;
+  background-color: #77d6d6; }
+  #content .waku.top {
+    height: 8px;
+    width: 100%;
+    top: 0;
+    left: 0; }
+  #content .waku.left {
+    width: 8px;
+    height: 100%;
+    top: 0;
+    left: 0; }
+  #content .waku.right {
+    width: 8px;
+    height: 100%;
+    top: 0;
+    right: 0; }
+  #content .waku.bottom {
+    height: 8px;
+    width: 100%;
+    bottom: 0;
+    left: 0; }
+
+.rankstlink-a {
+  text-align: center; }
+  .rankstlink-a p {
+    position: relative;
+    display: inline-block;
+    border: 2px solid #333;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out; }
+    .rankstlink-a p:before {
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      content: '';
+      width: 101%;
+      height: 105%;
+      opacity: 0.5;
+      background-color: #fe5f95;
+      -webkit-transition: 0.3s ease-in-out;
+      transition: 0.3s ease-in-out; }
+      .rankstlink-a p:before:hover {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%; }
+    .rankstlink-a p a {
+      position: relative;
+      display: block;
+      padding: 0.65em 4em;
+      color: #333;
+      text-decoration: none;
+      text-align: center; }
+      .rankstlink-a p a:hover {
+        color: #fff; }
+
+/*----------------------------------
+ランク
+-----------------------------------*/
+.rankst-wrap {
+  background-color: #ffffe0;
+  padding: 10px;
+  margin-bottom: 10px; }
+
+.rankst {
+  margin-bottom: 10px;
+  overflow: hidden; }
+
+.rankst p {
+  margin-bottom: 5px; }
+
+.rankst-cont blockquote {
+  background-color: transparent;
+  background-image: none;
+  padding: 0px;
+  margin-top: 0px;
+  border: none; }
+
+.rankst-cont {
+  margin: 0px; }
+
+.rankst-contb {
+  margin-bottom: 10px; }
+
+.rankst-l {
+  text-align: center; }
+
+.rankstlink-l {
+  width: 100%;
+  text-align: center; }
+
+.rankstlink-r {
+  float: right;
+  width: 100%; }
+
+/*スター*/
+.st-star {
+  color: #FFB400; }
+
+/*詳細ページへのリンクボタン*/
+.rankstlink-l p a {
+  display: block;
+  width: 90%;
+  text-align: center;
+  padding: 10px;
+  background: #df89b9;
+  color: #ffffff;
+  text-decoration: none;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  font-weight: bold; }
+
+.rankstlink-l p a:hover {
+  -moz-opacity: 0.8;
+  opacity: 0.8; }
+
+.rankstlink-b p a {
+  display: block;
+  width: 90%;
+  text-align: center;
+  padding: 10px;
+  background-color: #09C;
+  color: #ffffff;
+  text-decoration: none;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  font-weight: bold; }
+
+.rankstlink-b p a:hover {
+  -moz-opacity: 0.8;
+  opacity: 0.8; }
+
+.rankst-box .clearfix.rankst .rankst-l a img, .rankst-box .clearfix.rankst .rankst-l iframe {
+  padding: 5px;
+  padding-bottom: 10px;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto; }
+
+.rankst-cont p, .rankst-cont, .rankst-contb p, .rankst-contb {
+  font-size: 16px;
+  line-height: 25px; }
+
+.rankst-cont ul, .rankst-cont ol {
+  padding: 10px 20px;
+  margin-bottom: 10px; }
+
+.post .rankst-cont li {
+  font-size: 16px;
+  line-height: 25px; }
+
+.rankst-cont li {
+  font-size: 16px;
+  line-height: 25px; }
+
+.rankh4, .post .rankh4, #side .rankh4 {
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-left: 80px;
+  background-image: url(images/oukan.png);
+  margin-bottom: 10px;
+  border-bottom-width: 1px;
+  border-bottom-style: dotted;
+  border-bottom-color: #ABA732;
+  background-color: transparent;
+  color: #000; }
+
+/* 中見出し */
+.rankh3 {
+  position: relative;
+  background: #77d6d6 !important;
+  color: #ffffff !important;
+  font-size: 20px;
+  line-height: 27px;
+  margin-bottom: 20px;
+  padding: 10px 20px !important;
+  border-bottom: none !important; }
+
+.rankh3:after {
+  content: '';
+  position: absolute;
+  border-top: 10px solid #77d6d6;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+  bottom: -10px;
+  left: 30px;
+  border-radius: 2px; }
+
+.rankh3:before {
+  content: '';
+  position: absolute;
+  border-top: 10px solid #77d6d6;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+  bottom: -10px;
+  left: 30px; }
+
+/*-------------------------------------
+旧バージョン
+
+.rankh3{
+	position:relative;
+	padding:20px;
+	text-align:center;
+	background:#77d6d6;
+	box-shadow:
+		10px 0 0 0 #77d6d6,
+		-10px 0 0 0 #77d6d6,
+		0 3px 3px 0 rgba(0,0,0,0.1);
+	color:#ffffff!important;
+	margin-bottom:10px;
+	border:none!important;
+}
+
+.rankh3:before{
+	content:" ";
+	position:absolute;
+	top:100%;
+	left:-10px;
+	width:0;
+	height:0;
+	border-width:0 10px 10px 0;
+	border-style:solid;
+	border-color:transparent;
+	border-right-color:#1a1a1a;
+}
+
+.rankst-cont h3 {
+	font-size: 16px;
+	line-height: 20px;
+	margin-bottom:10px;
+	border:none;
+}
+-------------------------------------*/
+.post .rankst-cont h4, .rankst-cont h4 {
+  background-color: #FCFC88;
+  padding: 10px;
+  margin-bottom: 10px; }
+
+/*サイドバー*/
+#side .rankst-ls img {
+  max-width: 100% !important;
+  margin: 0 auto; }
+
+#side .rankst-ls {
+  text-align: center; }
+
+/*media Queries タブレットサイズ
+----------------------------------------------------*/
+/*media Queries タブレットサイズ
+----------------------------------------------------*/
+@media only screen and (min-width: 414px) {
+  .rankst-box .clearfix.rankst .rankst-l a img {
+    float: left;
+    padding-top: 5px;
+    padding-left: 0px;
+    padding-bottom: 10px;
+    padding-right: 0px; }
+
+  .rankst-cont {
+    margin: 0 0 0 165px; }
+
+  .rankst-r {
+    position: relative;
+    float: right;
+    width: 100%;
+    margin: 0 0 0 -150px; }
+
+  .rankst-l {
+    position: relative;
+    float: left;
+    width: 150px; }
+
+  .rankst-wrap {
+    background-color: #fffce3;
+    padding: 20px;
+    margin-bottom: 10px; }
+
+  .rankst-cont p, .rankst-cont, .rankst-contb p, .rankst-contb {
+    font-size: 14px;
+    line-height: 27px; }
+
+  .post .rankst-cont li {
+    font-size: 14px;
+    line-height: 27px; }
+
+  .rankst-wrap li, .rankst-wrap li, .rankst-cont li, .rankst-cont li {
+    font-size: 14px;
+    line-height: 27px; }
+
+  /*-- ここまで --*/ }
+/*media Queries PCサイズ
+----------------------------------------------------*/
+@media only screen and (min-width: 781px) {
+  .rankstlink-l {
+    float: left;
+    width: 50%; }
+
+  .rankstlink-r {
+    float: right;
+    width: 50%; }
+
+  /*----------------------------------
+  ランク-1カラム
+  -----------------------------------*/
+  .colum1 .rankst-r {
+    float: right;
+    width: 100%;
+    margin: 0 0 0 -320px; }
+
+  .colum1 .rankst-r p, .colum1 .rankst-cont {
+    font-size: 14px;
+    line-height: 27px;
+    margin-bottom: 20px; }
+
+  .colum1 .rankst-l {
+    float: left;
+    width: 300px; }
+
+  .colum1 .rankst-cont {
+    margin: 0 0 0 320px; }
+
+  .colum1 .rankst-wrap .rankst-cont li, .colum1 .rankst-cont li {
+    font-size: 14px;
+    line-height: 27px; }
+
+  /*-- ここまで --*/ }
 .postWrapper {
   /*黄色ボックス→白ボックス*/ }
-  .postWrapper h2 {
-    position: relative;
-    margin: 0 12px 25px 0;
-    padding: 14px 15px 0 20px;
-    color: #333;
-    background: #ffc;
-    box-shadow: 12px 0 0 0 #ffc, 0 12px 0 0 #ffc, 1px 15px 4px -3px rgba(0, 0, 0, 0.2); }
-    .postWrapper h2:before {
-      display: none; }
-    .postWrapper h2:after {
-      content: " ";
-      position: absolute;
-      top: 100%;
-      left: 100%;
-      width: 0;
-      height: 0;
-      border-width: 12px 12px 0 0;
-      border-style: solid;
-      border-color: transparent;
-      border-top-color: #cc9;
-      border-radius: 0; }
-  .postWrapper h4 {
-    position: relative;
-    padding-left: 30px;
-    border-bottom: 4px solid #ccc;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 38px;
-    margin: 0 0 10px; }
-    .postWrapper h4:before {
-      content: '';
-      border-radius: 30px;
-      -webkit-border-radius: 30px;
-      -moz-border-radius: 30px;
-      height: 12px;
-      width: 12px;
-      display: block;
-      position: absolute;
-      top: 14px;
-      left: 7px;
-      background-color: #FFADD6;
-      box-shadow: 0 0 2px 2px rgba(255, 255, 255, 0.2) inset;
-      filter: alpha(opacity=50);
-      -moz-opacity: 0.50;
-      -khtml-opacity: 0.50;
-      opacity: 0.50;
-      z-index: 1; }
-    .postWrapper h4:after {
-      content: '';
-      border-radius: 30px;
-      -webkit-border-radius: 30px;
-      -moz-border-radius: 30px;
-      height: 15px;
-      width: 15px;
-      display: block;
-      position: absolute;
-      top: 7px;
-      left: 2px;
-      background-color: #ff6699;
-      box-shadow: 0 0 2px 2px rgba(255, 255, 255, 0.2) inset; }
   .postWrapper h3 {
-    font-size: 1.2em;
-    /* 文字の大きさ */
-    font-weight: bold;
-    /* 文字の太さ */
-    color: #fff;
-    /* 文字の色 */
-    background: #ffadd6;
-    /* 背景色 */
-    border-radius: 8px;
-    /* 四隅の丸み */
-    -webkit-border-radius: 8px;
-    /* 四隅の丸みと同じ数字に */
-    -moz-border-radius: 8px;
-    /* 四隅の丸みと同じ数字に */
-    position: relative;
-    margin: 0 0 1.5em;
-    padding: 0.5em 0.4em 0.5em 2em; }
-    .postWrapper h3:before, .postWrapper h3:after {
+    border-left: 5px #fe5f95 solid; }
+  .postWrapper h4 {
+    padding: 10px 0; }
+    .postWrapper h4:before {
       content: "";
-      position: absolute;
-      display: block; }
-    .postWrapper h3:before {
-      top: -0.1em;
-      left: 0.5em;
-      width: 20px;
-      height: 23px;
-      padding: 5px 0 0;
-      background: #f69;
-      /* リボン部分の色 */
-      text-align: center; }
-    .postWrapper h3:after {
-      top: 0.8em;
-      left: 0.5em;
-      width: 0;
-      height: 0;
-      border: 10px solid;
-      border-color: transparent #f69;
-      /* リボンの切りっぱなし部分の色 */ }
+      margin-right: 10px;
+      display: inline-block;
+      background-color: #ffaaaa;
+      width: 10px;
+      height: 10px; }
   .postWrapper .wp_rp_wrap .related_post_title {
     color: #000;
     background: #fff;
@@ -2073,5 +2320,61 @@ NEWS（お知らせ）
     border-radius: 3em 0.7em 2em 0.7em/.7em 2em 0.7em 3em; }
   .postWrapper strong {
     background-image: linear-gradient(transparent 65%, #ffaaaa 50%); }
+  .postWrapper .memo {
+    position: relative;
+    width: auto;
+    box-sizing: border-box;
+    padding: 25px 10px 10px;
+    margin: 30px 0 20px 20px;
+    background-color: #ffc;
+    color: #333;
+    border: 1px solid #999; }
+    .postWrapper .memo .memo_title {
+      position: absolute;
+      display: block;
+      padding: 0 10px;
+      height: 1.5em;
+      top: -20px;
+      left: -20px;
+      font-weight: bold;
+      font-size: 200%;
+      border: #000 1px solid;
+      box-shadow: 4px 4px #999;
+      background-color: #fff;
+      color: #555; }
+  .postWrapper .list {
+    position: relative;
+    border: 1px solid #999;
+    margin: 10px; }
+    .postWrapper .list ul {
+      position: relative;
+      background-color: #fff;
+      top: -5px;
+      left: -5px;
+      border: 1px solid #999;
+      margin: 0;
+      padding: 10px; }
+      .postWrapper .list ul li {
+        position: relative;
+        list-style: none;
+        padding-left: 30px; }
+        .postWrapper .list ul li:after {
+          position: absolute;
+          content: "";
+          height: 30px;
+          width: 30px;
+          top: -7px;
+          left: -2px;
+          background-image: url(./images/check1.png);
+          background-size: cover; }
+        .postWrapper .list ul li:before {
+          content: "";
+          position: absolute;
+          top: 4px;
+          left: 3px;
+          height: 15px;
+          width: 15px;
+          border: 1px solid #999;
+          border-radius: 2px; }
 
 /*# sourceMappingURL=style.css.map */

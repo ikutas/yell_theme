@@ -9,7 +9,7 @@
 					<div id="breadcrumb">
 						<div itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
 							<a href="<?php echo home_url(); ?>" itemprop="url"> <span itemprop="title">ホーム</span>
-							</a> &gt; </div>
+							</a><span class="breadcrumb__arrow">&gt;</span></div>
 						<?php $postcat = get_the_category(); ?>
 						<?php $catid = $postcat[0]->cat_ID; ?>
 						<?php $allcats = array( $catid ); ?>
@@ -25,7 +25,7 @@
 						<?php foreach ( $allcats as $catid ): ?>
 							<div itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
 								<a href="<?php echo get_category_link( $catid ); ?>" itemprop="url">
-									<span itemprop="title"><?php echo esc_html( get_cat_name( $catid ) ); ?></span> </a> &gt; </div>
+									<span itemprop="title"><?php echo esc_html( get_cat_name( $catid ) ); ?></span> </a><span class="breadcrumb__arrow">&gt;</span></div>
 						<?php endforeach; ?>
 					</div>
 					<!--/ ぱんくず -->
